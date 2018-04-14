@@ -1,0 +1,44 @@
+p {
+    color: red;
+    border: deeppink 5px solid;
+    font-family: 'Gugi', cursive;
+    text-transform: uppercase;
+}
+
+h1 {
+    color: yellow;
+    border: 5px dotted green;
+    padding: 5px;
+    margin: 10px;
+}
+
+body {
+    background-color: black;
+    border: white solid 5px;
+    padding: 10px;
+}
+
+.clase1 {
+    text-decoration: overline;
+}
+
+.clase1:hover {
+    color: grey;
+}
+
+.clase2 {
+    text-decoration: dashed;
+}
+
+.clase2:hover {
+    background-color: floralwhite;
+}
+
+#id1 {
+    background-color: dodgerblue;
+}
+
+#id1:hover {
+    color: darkslategrey;
+    background-color: black;
+}
