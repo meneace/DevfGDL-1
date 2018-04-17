@@ -1,0 +1,115 @@
+.grid-menu {
+    display: grid;
+    grid-template-areas: 'header header sheader sheader' 'header header sheader sheader';
+    grid-gap: 2px;
+    padding: 5px;
+    background-color: blue;
+    color: white;
+}
+
+.grid-menu>div {
+    text-align: center;
+    padding: 10px 0;
+    font-size: 15px;
+}
+
+.Mitem {
+    grid-area: header;
+}
+
+.Mitem2 {
+    grid-area: sheader;
+    text-align: right;
+}
+
+body {
+    background-color: rgb(180, 176, 176);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+
+i {
+    font-size: 70px;
+}
+
+
+/*
+.grid-menu2 {
+    display: grid;
+    grid-template-areas: 'i1 i2 i3 i4 i5' 'i1 i2 i3 i4 i5' 'i6 i7 i8 i9 i10' 'i6 i7 i8 i9 i10';
+    grid-gap: 2px;
+    padding: 5px;
+}
+
+
+.grid-menu2>div {
+    text-align: center;
+    padding: 10px 0;
+}
+*/
+
+
+/*
+#user {
+    grid-area: i1;
+}
+
+#cohete {
+    grid-area: i2;
+}
+
+#jet {
+    grid-area: i3;
+}
+
+#spy {
+    grid-area: i4;
+}
+
+#camera {
+    grid-area: i5;
+}
+
+#extintor {
+    grid-area: i6;
+}
+
+#corazon {
+    grid-area: i7;
+}
+
+#basquet {
+    grid-area: i8;
+}
+
+#football {
+    grid-area: i9;
+}
+*/
+
+.grid-menu2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    grid-gap: 10px;
+    background-color: rgb(180, 176, 176);
+}
+
+article {
+    position: relative;
+    align-items: center;
+    text-align: center;
+    background-color: white;
+    padding: 5px;
+    margin: 10px;
+    box-shadow: 5px 5px #888888;
+}
+
+.art-h2 {
+    position: relative;
+    bottom: 0;
+    width: 98%;
+    padding: 5px;
+    background-color: rgba(255, 2555, 255, 0.2)
+}

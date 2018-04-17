@@ -1,25 +1,39 @@
 p {
-    color: red;
-    border: deeppink 5px solid;
+    color: rgb(4, 170, 4);
     font-family: 'Gugi', cursive;
     text-transform: uppercase;
 }
 
 h1 {
-    color: yellow;
-    border: 5px dotted green;
+    color: rgb(34, 93, 100);
     padding: 5px;
     margin: 10px;
 }
 
 body {
-    background-color: black;
-    border: white solid 5px;
+    border: rgb(5, 193, 240) solid 5px;
     padding: 10px;
 }
 
-.clase1 {
-    text-decoration: overline;
+header {
+    color: rgb(9, 32, 245);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    background: url('http://thesmartlocal.com/images/easyblog_images/1539/m3.jpg') center #333 no-repeat;
+    background-size: cover;
+    height: 240px;
+}
+
+nav {
+    color: turquoise;
+    background-color: black;
+    width: 100%;
+    text-align: center;
+    margin-right: 30px
+}
+
+.menu:hover {
+    text-decoration-line: underline;
 }
 
 .clase1:hover {
@@ -31,7 +45,8 @@ body {
 }
 
 .clase2:hover {
-    background-color: floralwhite;
+    background-color: rgb(211, 171, 92);
+    color: white;
 }
 
 #id1 {
@@ -41,4 +56,63 @@ body {
 #id1:hover {
     color: darkslategrey;
     background-color: black;
+}
+
+.grid-contenedor {
+    display: grid;
+    grid-template-areas: 'header header header header' 'menu arriba arriba arriba' 'menu arriba arriba arriba' 'menu abajo abajo abajo' 'menu abajo abajo abajo';
+    grid-gap: 2px;
+    padding: 5px;
+}
+
+.grid-contenedor>div {
+    text-align: center;
+    padding: 10px 0;
+    font-size: 15px;
+}
+
+.item1 {
+    grid-area: header;
+}
+
+.item2 {
+    grid-area: menu;
+}
+
+.item3 {
+    grid-area: arriba;
+}
+
+.item4 {
+    grid-area: abajo;
+}
+
+.grid-contenedor2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 30px;
+    max-width: 960px;
+    margin: 0 auto 30px;
+}
+
+article {
+    position: relative;
+}
+
+.art-h2 {
+    position: absolute;
+    bottom: 0;
+    width: 98%;
+    padding: 5px;
+    background-color: rgba(255, 2555, 255, 0.2)
+}
+
+.art-vid {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.pie {
+    grid-area: pie;
 }
