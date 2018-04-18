@@ -1,0 +1,83 @@
+.fondo {
+    background-color: blue;
+}
+
+.bgblanco {
+    background-color: white;
+    padding: 10px;
+    margin: 5px 20% 5px 20%;
+    text-align: center;
+}
+
+.titulopink {
+    color: pink;
+}
+
+.bgimg {
+    margin: 5px 20% 5px 20%;
+    text-align: center;
+    color: white;
+}
+
+.bgintu {
+    margin: 5% 15% 5% 15%;
+    background-color: green;
+    text-align: center;
+    height: 385px;
+}
+
+.margen {
+    border: 2px solid white;
+}
+
+.grid1 {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 2fr));
+    grid-gap: 20px;
+    text-align: center;
+}
+
+.grid2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 2fr));
+    border: aqua solid 5px;
+}
+
+.grid2>div {
+    text-align: center;
+    padding: 10px 0;
+    font-size: 15px;
+}
+
+header {
+    text-align: left;
+    height: 70px;
+}
+
+.header {
+    margin-top: 70px;
+}
+
+img {
+    width: 600px;
+    height: 500px;
+}
+
+.derecho {
+    margin-right: opx;
+    float: right;
+}
+
+.izq {
+    margin-left: 0px;
+    height: 300px;
+    float: left;
+}
+
+.carralt {
+    height: 600px;
+}
+
+p {
+    bottom: 0px;
+}
