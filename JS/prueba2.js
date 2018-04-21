@@ -3,13 +3,13 @@ let edad = 95;
 if (edad >= 18) {
     console.log('ya es mayor de edad');
     if (edad >= 40 & edad <= 60) {
-        console.log('Podria ser tu papà');
+        console.log('podria ser tu jefe');
     } else if (edad > 60 & edad <= 90) {
-        console.log('Podria ser tu abuelo');
+        console.log('podria ser tu abuelo');
     } else {
         console.log('ya es una momia');
     }
-} else(edad < 18); {
+} else {
     if (edad >= 3 & edad <= 6) {
         console.log('Esta en Kinder');
     } else if (edad > 6 & edad <= 12) {
@@ -21,4 +21,5 @@ if (edad >= 18) {
     } else {
         console.log('Es un bebe');
     }
+
 }
