@@ -1,0 +1,30 @@
+.col-sm,
+.col-sm-2,
+.col,
+.col-sm-3,
+.col-2,
+.col-1,
+.col-4,
+.col-6 {
+    background-color: gray;
+    border: black solid 1px;
+    padding: 10px;
+}
+
+.trans {
+    background-color: transparent;
+    border: none;
+}
+
+.altura-320 {
+    height: 320px;
+}
+
+.altura-160 {
+    height: 160px;
+}
+
+.nonpad {
+    padding: 0px;
+    margin: 0px;
+}
