@@ -1,6 +1,10 @@
-for (let i = 1; i <= 10; i++) {
-    console.log("1x", i, "=", i = i);
-    for (let o = i; o <= i; o++) {
-        console.log(o + "x", o, "=", o * o);
+for (let i = 1; i <= 1; i++) {
+
+    for (let o = i; o <= 2; o++) {
+
+
+        for (let w = i; w <= 10; w++) {
+            console.log(w + " x", o, "=", w * o);
+        }
     }
 }
