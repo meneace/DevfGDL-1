@@ -1,5 +1,6 @@
-let ana = ["m", "u", "r", "c", "i", "e", "l", "a", "g", "o"];
-let vsana = ["o", "g", "a", "l", "e", "i", "c", "r", "u", "m"];
+console.time('test');
+let ana = ["o", "m", "a", "r"];
+let vsana = ["a", "m", "o", "r"];
 
 var a = ana.sort();
 var b = vsana.sort();
@@ -31,3 +32,5 @@ console.log(t); */
 
 var anat = sum.length > 0 && sum.length === sum1.length && (sum.toLowerCase().split('').sort().join('') === sum1.toLowerCase().split('').sort().join(''));
 console.log(anat)
+
+console.timeEnd('test')
