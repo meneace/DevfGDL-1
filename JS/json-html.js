@@ -18,10 +18,13 @@ cinta_blanca.push(sujeto);
 
 
 for (i = 0; i < cinta_blanca.length; i++) {
-    let h1 = document.createElement('h1');
-    let texto = document.createTextNode("Este wey se llama " + cinta_blanca[i].nombre + ' y tiene ' + cinta_blanca[i].edad + ' años');
-    h1.appendChild(texto);
-    elbody.appendChild(h1);
+    //let h1 = document.createElement('h1');
+    let h1 = $('<h1>' + "Este wey se llama " + cinta_blanca[i].nombre + ' y tiene ' + cinta_blanca[i].edad + ' años</h1>');
+    //let texto = document.createTextNode("Este wey se llama " + cinta_blanca[i].nombre + ' y tiene ' + cinta_blanca[i].edad + ' años');
+    //h1.appendChild(texto);
+    //elbody.appendChild(h1);
+
+    $('#elbody').append(h1);
 }
 
 
