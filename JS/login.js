@@ -1,7 +1,6 @@
 function log() {
 
     if (ValidInputs()) {
-
         $('body').css({ 'background-color': 'red' });
         alert("Faltan datos por capturar");
     } else {
