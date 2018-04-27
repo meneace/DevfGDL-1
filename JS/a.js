@@ -11,7 +11,10 @@ let l = require('./d.js');
 a();*/
 
 function b(j, k) {
-    console.log(j);
+    let a = 5;
+    let b = 6;
+    l(a, b);
+    k(a, b);
 
 }
 b();
