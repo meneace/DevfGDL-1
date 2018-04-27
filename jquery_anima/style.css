@@ -1,0 +1,12 @@
+div {
+    width: 300px;
+    height: 300px;
+    border: solid yellow 2px;
+    border-radius: 30px;
+    background-color: turquoise;
+    margin: 10% auto;
+}
+
+body {
+    background-color: black;
+}
