@@ -1,18 +1,25 @@
+*:focus {
+    outline: none;
+}
+
 body {
     margin: 0px;
     background-color: lightgray;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 nav {
     width: 100%;
     padding: 16px;
     background-color: chocolate;
-    box-shadow: rgba(o, 0, 0, 0.5) 1px 1px 1px;
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.5) 1px 1px 1px;
 }
 
-button.redondo {
-    border-radius: 50%;
-    color: white;
+button {
+    padding: 15px;
+    background-color: transparent;
+    border: 0px;
 }
 
 #agregar {
@@ -20,46 +27,44 @@ button.redondo {
     bottom: 50px;
     right: 50px;
     color: darkgrey;
+    background-color: white;
 }
 
 .redondo {
-    box-shadow: black 1px 1px 1px;
-    height: 30px;
-    width: 30px;
-}
-
-brillante {
-    background-color: orange;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.5) 1px 1px 1px;
 }
 
 .tarjeta {
-    width: 200px;
+    margin: 10px;
+    width: 250px;
     background-color: white;
     padding: 6px;
-    margin: 10px;
-    box-shadow: rgba(o, 0, 0, 0.5) 1px 1px 1px;
+    box-shadow: rgba(0, 0, 0, 0.5) 1px 1px 1px;
     float: left;
 }
 
-.pre input {
+#pre-tarjeta input,
+#pre-tarjeta textarea {
     border: 0px;
     border-bottom: 1px solid black;
     padding: 5px;
     margin-bottom: 15px;
+    width: 90%;
 }
 
-button:hover {
-    transform: scale(1.1, 1.1);
-    background-color: rgb(34, 32, 32);
-    color: antiquewhite;
+#pre-tarjeta input {
+    font-size: 1.2em;
 }
 
-nav {
-    font-family: 'Pacifico', cursive;
-    font-size: 50px;
-    padding: 0px;
+#pre-tarjeta textarea {
+    font-size: 1em;
 }
 
-p {
-    font-family: 'Indie Flower', cursive;
+#pre-tarjeta button {
+    float: right;
+}
+
+.btn-cancel {
+    color: #bc0903;
 }

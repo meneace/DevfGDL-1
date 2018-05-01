@@ -1,12 +1,30 @@
-let tarjetas = [];
-
 function generaTarjeta() {
-
-    let tarj = $('<div class="tarjeta"><input type="text"></input><textarea></textarea><button>Guardar</button></div>');
-    $('.contenedor').prepend(tarj);
+    $('#pre-tarjeta').css({ display: '' });
 }
 
-function agregarTarjeta() {
-    let tarj = $('<div class="tarjeta"></div>');
-    $('.contenedor').prepend(tarj);
+function limpiaTarjeta() {
+    $('#pre-tarjeta').css({ display: 'none' });
+    $('input').val('');
+    $('textarea').val('');
+}
+
+function guardaTarjeta() {
+    if (validaInputs()) {
+        let nuevaTarjeta = $('#plantilla').clone();
+
+        $(nuevaTarjeta).find('h3').text($('input').val());
+        $(nuevaTarjeta).find('p').text($('textarea').val());
+        $(nuevaTarjeta).css({ display: '' });
+        $(nuevaTarjeta).removeAttr('id');
+
+        $('.contenedor .tarjeta:eq(0)').after(nuevaTarjeta);
+        limpiaTarjeta();
+    }
+}
+
+function validaInputs() {
+    let titulo = $('input').val()
+    let texto = $('textarea').val();
+
+    return (titulo.length > 0 && texto.length > 0);
 }

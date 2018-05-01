@@ -5,30 +5,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/style2.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+    <title>Notas</title>
+    <!-- Font Awesome! -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
+
+    <!-- My CSS -->
+    <link href="css/style2.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
+    <nav>
+        Notas de la Clase
+    </nav>
 
+    <div class="contenedor">
 
-    <nav>Notas de clase</nav>
-    <div class="contenedor"></div>
-    <div class="tarjeta">
-        <h3>titulo</h3>
-        <p>texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto </p>
+        <div id="pre-tarjeta" class="tarjeta" style="display:none;">
+            <input type="text"></input>
+            <textarea></textarea>
+            <button onclick="guardaTarjeta()">Save</button>
+            <button class="btn-cancel" onclick="limpiaTarjeta()">Cancel</button>
+        </div>
+
+        <div class="tarjeta">
+            <h3>titulo</h3>
+            <p>texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto </p>
+        </div>
+
+        <div id="plantilla" class="tarjeta" style="display:none;">
+            <h3></h3>
+            <p></p>
+        </div>
     </div>
 
-    <button class="redondo" id="agregar" onclick="generaTarjeta()">
+    <button id="agregar" class="redondo" onclick="generaTarjeta()">
         <i class="fas fa-plus"></i>
     </button>
-    <script src="javascript/main2.js"></script>
     <script src="http://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
-
-
+    <script src="javascript/main2.js"></script>
 </body>
 
 </html>
