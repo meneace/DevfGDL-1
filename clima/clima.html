@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans|Fjalla+One" rel="stylesheet">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <link href="css/style.css" rel="stylesheet" type="text/css" />
@@ -13,7 +14,7 @@
 </head>
 
 <body>
-    <div class='cuestionario'>
+    <div id="cuestionario" class='cuestionario'>
         <input id='ciudad' placeholder="    Ciudad" style="background-color: rgb(253, 239, 219); font-size: 15px;"></input>
         <i class="fas fa-search lupa" onclick="clima()"></i>
         <!-- <button onclick="clima()">Buscar</button> -->
@@ -22,21 +23,19 @@
     <div class="principal">
         <div id="info">
             <div id='city'>
-                <h1></h1>
             </div>
             <div id="ConTemp">
                 <div id="CloudImage" class="CloudImage">
-
                 </div>
                 <div id="temps" class="temps">
-                    <div id='min' class='izq'>
+                    <div id="min" class="izq">
                     </div>
-                    <div id='max' class='der'>
+                    <div id='max' class="der">
                     </div>
                 </div>
             </div>
         </div>
-
+        <div id="back" class="back"></div>
     </div>
     <script src="js/java.js"></script>
 </body>

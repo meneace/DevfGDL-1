@@ -21,6 +21,7 @@ function clima() {
             console.log("Temperatura maxima " + response.main.temp_max + "ºC");
             console.log("Nubosidad " + response.clouds.all);
             console.log("Ciudad " + response.name);
+            //console.log("Clima " + response.weather.reponse);
 
             //Temperatura Mínima
             let minima = $("<h3>" + "Temperatura Mínima" + "</h3>")
@@ -42,11 +43,19 @@ function clima() {
             let city = $("<h1 class='ciudad'>" + response.name + "</h1>")
             $("#city").append(city);
 
-            //Cambio color del div principal
+            //Cambio color del div principal, pone sombra y oculta el cuestionario
             $('.principal').css({ 'background-color': 'ghostwhite' });
+            $('.principal').css({ 'box-shadow': 'rgba(0, 0, 0, 0.6) 2px 2px 2px' });
+            $('.cuestionario').css({ 'display': 'none' });
+
+            //Muestra el boton de regreso
+            let atras = $("<i class='fas fa-undo' onclick='regresa()'>" + "</i>")
+            $("#back").append(atras);
+
+
+
 
             //Seleccion de imagen segun nubosidad
-            // <img src="img/nubes_ligth.jpg" alt="Poca nubosidad">
             if (response.clouds.all <= 40) {
                 let img = $("<img src='img/nubes_ligth.jpg' alt='Poca nubosidad'>")
                 $("#CloudImage").append(img);
@@ -54,9 +63,13 @@ function clima() {
                 let img = $("<img src='img/heavy-cloud.jpg' alt='alta nubosidad'>")
                 $("#CloudImage").append(img);
             }
-
+            //Muestra el porcentaje de lluvia
             let cloud = $("<h3 style='nubes'>" + response.clouds.all + " %" + "</h3>")
             $("#CloudImage").append(cloud);
+
+            /*Muestra si esta lloviendo o no 
+            let rain = $("<h3>" + response.weather.description + "</h3>")
+            $("#CloudImage").append(rain);*/
         });
     }
 }
@@ -67,4 +80,6 @@ function validaInputs() {
     return ciudad.length > 0;
 }
 
-// $(".principal").html("");
+function regresa() {
+    window.location.reload(false);
+}

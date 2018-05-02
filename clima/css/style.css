@@ -1,21 +1,25 @@
     .der {
         text-align: center;
-        height: 150px;
+        height: 100px;
+        font-family: 'Fira Sans', sans-serif;
     }
     
     .izq {
         text-align: center;
-        height: 150px;
+        height: 100px;
+        font-family: 'Fira Sans', sans-serif;
     }
     
     .principal {
         margin-left: 20%;
         margin-right: 20%;
         border-radius: 50px;
+        font-family: 'Fira Sans', sans-serif;
     }
     
     .ciudad {
         text-align: center;
+        font-family: 'Fjalla One', sans-serif;
     }
     
     .cuestionario {
@@ -47,7 +51,8 @@
     
     img {
         width: 300px;
-        margin-top: 30%;
+        margin-top: 10%;
+        padding: 0px;
     }
     
     .CloudImage {
@@ -70,4 +75,16 @@
     
     .lupa:active {
         color: rgb(85, 84, 84);
+    }
+    
+    .back {
+        text-align: right;
+        padding: 0px;
+        margin-right: 20px;
+        font-size: 40px;
+        color: grey;
+    }
+    
+    .back:active {
+        color: rgb(61, 59, 59);
     }
