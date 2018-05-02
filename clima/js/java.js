@@ -21,14 +21,13 @@ function clima() {
             console.log("Temperatura maxima " + response.main.temp_max + "ºC");
             console.log("Nubosidad " + response.clouds.all);
             console.log("Ciudad " + response.name);
-            //console.log("Clima " + response.weather.reponse);
 
             //Temperatura Mínima
             let minima = $("<h3>" + "Temperatura Mínima" + "</h3>")
             $("#min").append(minima);
             let minima2 = $("<i class='fas fa-thermometer-quarter' style='color: blue'>" + "</i>")
             $("#min").append(minima2);
-            let minima3 = $("<h3>" + response.main.temp_min + "ºC" + "</h3>")
+            let minima3 = $("<h3>" + response.main.temp_min + "&deg;" + "C" + "</h3>")
             $("#min").append(minima3);
 
             //Temperatura Maxima
@@ -36,7 +35,7 @@ function clima() {
             $("#max").append(maxima);
             let maxima2 = $("<i class='fas fa-thermometer-three-quarters' style='color: red'>" + "</i>")
             $("#max").append(maxima2);
-            let maxima3 = $("<h3>" + response.main.temp_max + "ºC" + "</h3>")
+            let maxima3 = $("<h3>" + response.main.temp_max + "&deg;" + "C" + "</h3>")
             $("#max").append(maxima3);
 
             //Letrero de ciudad solicitada
@@ -57,19 +56,22 @@ function clima() {
 
             //Seleccion de imagen segun nubosidad
             if (response.clouds.all <= 40) {
-                let img = $("<img src='img/nubes_ligth.jpg' alt='Poca nubosidad'>")
-                $("#CloudImage").append(img);
+                if (response.clouds.all <= 15) {
+                    let img = $("<img src='img/clear-sky.jpg' alt='Poca nubosidad'>")
+                    $("#Imagen").append(img);
+                } else {
+                    let img = $("<img src='img/nubes_ligth.jpg' alt='Sin nubosidad'>")
+                    $("#Imagen").append(img);
+                }
             } else {
-                let img = $("<img src='img/heavy-cloud.jpg' alt='alta nubosidad'>")
-                $("#CloudImage").append(img);
+                let img = $("<img src='img/heavy-cloud.jpg' alt='Alta nubosidad'>")
+                $("#Imagen").append(img);
             }
             //Muestra el porcentaje de lluvia
-            let cloud = $("<h3 style='nubes'>" + response.clouds.all + " %" + "</h3>")
-            $("#CloudImage").append(cloud);
-
-            /*Muestra si esta lloviendo o no 
-            let rain = $("<h3>" + response.weather.description + "</h3>")
-            $("#CloudImage").append(rain);*/
+            let cloud = $("<p style='nubes'>" + "Nubosidad: " + response.clouds.all + "%" + "</p>")
+            $("#masInfo").append(cloud);
+            let humi = $("<p style='nubes'>" + "Humedad " + response.main.humidity + "%" + "</p>")
+            $("#masInfo").append(humi);
         });
     }
 }

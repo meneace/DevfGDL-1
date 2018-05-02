@@ -22,6 +22,10 @@
         font-family: 'Fjalla One', sans-serif;
     }
     
+    #city {
+        padding-top: 10px;
+    }
+    
     .cuestionario {
         margin-left: auto;
         margin-right: auto;
@@ -81,10 +85,19 @@
         text-align: right;
         padding: 0px;
         margin-right: 20px;
-        font-size: 40px;
+        font-size: 30px;
         color: grey;
     }
     
     .back:active {
         color: rgb(61, 59, 59);
+    }
+    
+    #masInfo {
+        font-family: 'Fira Sans', sans-serif;
+        font-size: 13px;
+        padding: 0px;
+        font-style: italic;
+        -webkit-margin-before: 0px;
+        -webkit-margin-after: 0px;
     }
