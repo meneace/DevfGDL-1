@@ -21,6 +21,9 @@ function clima() {
             console.log("Temperatura maxima " + response.main.temp_max + "ºC");
             console.log("Nubosidad " + response.clouds.all);
             console.log("Ciudad " + response.name);
+            console.log("Lluvia " + response.weather[0].description);
+            console.log("Pais " + response.sys.country);
+            console.log("Icono " + response.weather[0].icon);
 
             //Temperatura Mínima
             let minima = $("<h3>" + "Temperatura Mínima" + "</h3>")
@@ -55,6 +58,8 @@ function clima() {
 
 
             //Seleccion de imagen segun nubosidad
+            let icono = $("<img src='http://openweathermap.org/img/w/" + response.weather[0].icon + ".png'" + ">")
+            $("#icon").append(icono);
             if (response.clouds.all <= 40) {
                 if (response.clouds.all <= 15) {
                     let img = $("<img src='img/clear-sky.jpg' alt='Poca nubosidad'>")
