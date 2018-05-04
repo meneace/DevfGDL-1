@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans|Fjalla+One" rel="stylesheet">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <link href="css/style-b.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+
+    <title>Clima del Mundo</title>
+</head>
+
+<body>
+    <div id="cuestionario" class='cuestionario'>
+        <input id='ciudad' placeholder="    Ciudad" style="background-color: rgb(253, 239, 219); font-size: 15px;"></input>
+        <i class="fas fa-search lupa" onclick="clima()"></i>
+        <!-- <button onclick="clima()">Buscar</button> -->
+    </div>
+
+    <div id="info" class="principal fira">
+        <div id="info">
+            <div id='city'>
+            </div>
+            <div id="ConTemp">
+                <div id="CloudImage" class="CloudImage">
+
+                    <div id="icon"></div>
+                    <div id="masInfo font-family: 'Fira Sans', sans-serif;">
+                    </div>
+                </div>
+                <div id="temps" class="temps">
+                    <div id="min" class="temperaturas fira">
+                        <h3>Temperatura Mínima</h3>
+                        <i class='fas fa-thermometer-quarter' style='color: blue'></i>
+                    </div>
+                    <div id='max' class="temperaturas fira">
+                        <h3>Temperatura Máxima</h3>
+                        <i class='fas fa-thermometer-three-quarters' style='color: red'></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="back" class="back"></div>
+    </div>
+    <script src="js/java-b.js"></script>
+</body>
+
+</html>

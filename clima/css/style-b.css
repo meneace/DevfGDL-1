@@ -1,0 +1,100 @@
+    .temperaturas {
+        text-align: center;
+        height: 100px;
+    }
+    
+    .principal {
+        margin-left: 20%;
+        margin-right: 20%;
+        border-radius: 50px;
+        display: none;
+    }
+    
+    .fira {
+        font-family: 'Fira Sans', sans-serif;
+    }
+    
+    .ciudad {
+        text-align: center;
+        font-family: 'Fjalla One', sans-serif;
+    }
+    
+    #city {
+        padding-top: 10px;
+    }
+    
+    .cuestionario {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    
+    input {
+        background-color: transparent;
+        border: 0px;
+        border-bottom: solid 1px #a1a0a0;
+        padding: 5px;
+        margin-bottom: 10px;
+    }
+    
+    button {
+        border: 0px;
+        padding: 5px;
+        box-shadow: rgba(0, 0, 0, 0.4) 1px 1px 1px;
+    }
+    
+    #ConTemp {
+        margin-left: 10%;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 4fr));
+        grid-gap: 20px;
+    }
+    
+    img {
+        width: 300px;
+        margin-top: 10%;
+        padding: 0px;
+    }
+    
+    #temps {
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+    }
+    
+    body {
+        background-color: rgb(204, 201, 201);
+    }
+    
+    .lupa {
+        font-size: 25px;
+        color: grey;
+    }
+    
+    .lupa:active {
+        color: rgb(85, 84, 84);
+    }
+    
+    .back {
+        text-align: right;
+        padding: 0px;
+        margin-right: 20px;
+        font-size: 30px;
+        color: grey;
+    }
+    
+    .back:active {
+        color: rgb(61, 59, 59);
+    }
+    
+    #masInfo {
+        font-size: 13px;
+        padding: 0px;
+        font-style: italic;
+        -webkit-margin-before: 0px;
+        -webkit-margin-after: 0px;
+    }
+    
+    img {
+        width: 180px;
+        margin-top: 0px;
+        padding: 0px;
+    }
