@@ -9,43 +9,46 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/registry.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="javascript/registry.js"></script>
     <title>Document</title>
 </head>
 
-<body>
-    <div class="principal">
+<body class="nocolor">
+    <div id="principal">
         <ul id="avance">
             <li class="active">Crea tu cuenta</li>
-            <li>Perfil Social</li>
-            <li>Informacion Personal</li>
+            <li>Tus redes Sociales</li>
+            <li>Tu Información Personal</li>
         </ul>
-        <fieldset>
-            <h2>Crea tu contraseña</h2>
-            <h3>Paso 1</h3>
+        <fieldset id="uno">
+            <h2 class="titulo">Crea tu contraseña</h2>
+            <h3 class="subtitulo">Paso 1</h3>
             <input type="email" placeholder="Email">
             <input type="password" placeholder="Contraseña">
             <input type="password" placeholder="Confirma Contraseña">
-            <input type="button" name="siguiente" class="siguiente action-button" value="siguiente" />
+            <input type="button" name="siguiente" class="siguiente action" value="siguiente" />
         </fieldset>
 
-        <fieldset>
-            <h2>Tus redes Sociales</h2>
-            <h3>Paso 2</h3>
+        <fieldset id="dos">
+            <h2 class="titulo">Tus redes Sociales</h2>
+            <h3 class="subtitulo">Paso 2</h3>
             <input type="text" placeholder="Github">
             <input type="text" placeholder="Twitter">
             <input type="text" placeholder="Facebook">
-            <input type="button" name="previo" class="previo action-button" value="Previo" />
-            <input type="button" name="siguiente" class="siguiente action-button" value="siguiente" />
+            <input type="button" name="previo" class="previo action" value="Previo" />
+            <input type="button" id="sigui" name="sigui" class="sigui action" value="siguiente" />
         </fieldset>
 
-        <fieldset>
-            <h2>Tu Información Personal</h2>
-            <h3>Ultimo Paso</h3>
+        <fieldset id="tres">
+            <h2 class="titulo">Tu Información Personal</h2>
+            <h3 class="subtitulo">Ultimo Paso</h3>
             <input type="text" placeholder="Nombre Completo">
             <input type="text" placeholder="Link a tu imagen">
             <input type="text" placeholder="Musica">
-            <input type="button" name="previo" class="previo action-button" value="Previo" />
-            <input type="submit" name="crear" class="crear action-button" value="crear" />
+            <input type="button" id="previo" class="action" value="Previo" />
+            <input type="submit" name="crear" class="crear action" value="crear" />
         </fieldset>
     </div>
 
