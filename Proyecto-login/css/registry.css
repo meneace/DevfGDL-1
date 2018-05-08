@@ -1,0 +1,5 @@
+#avance li.active:before,
+#avance li.active:after {
+    background: #27AE60;
+    color: white;
+}
