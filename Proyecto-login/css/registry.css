@@ -1,7 +1,7 @@
 #avance li.active:before,
 #avance li.active:after {
-    background: rgb(217, 55, 57);
-    color: white;
+    background: rgb(3, 101, 100);
+    color: rgb(249, 236, 220);
 }
 
 #principal {
