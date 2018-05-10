@@ -93,7 +93,9 @@ footer {
     color: rgb(59, 134, 134);
     display: inline-block;
     margin-left: 20px;
-    padding: 5px;
+    padding: 0px;
+    margin-top: 30px;
+    font-size: 25px;
 }
 
 .spotify:hover {
