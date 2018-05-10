@@ -1,0 +1,123 @@
+body,
+html {
+    background-color: rgb(207, 240, 158);
+    height: 100%;
+}
+
+footer {
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+#contenedor {
+    height: 90%;
+}
+
+#grid {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(45%, 2fr));
+    grid-gap: 20px;
+    background-color: rgb(169, 219, 168);
+    margin: auto;
+    color: rgb(59, 134, 134);
+    height: 30%;
+}
+
+#grid:hover {
+    box-shadow: inset 0 0 0 15px rgb(121, 189, 154);
+}
+
+#grid2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(90%, 2fr));
+}
+
+#grid2>div {
+    text-align: center;
+    padding: 10px 0;
+    font-size: 15px;
+}
+
+#bio {
+    width: 90%;
+    height: 35%;
+    margin: auto;
+    background-color: rgb(59, 134, 134);
+    color: rgb(169, 219, 168);
+}
+
+#bio:hover {
+    box-shadow: inset 0 0 0 15px rgb(121, 189, 154);
+}
+
+#hobbies {
+    width: 90%;
+    height: 43px;
+    margin: auto;
+    background-color: rgb(169, 219, 168);
+    padding: 0px;
+    text-align: center;
+    color: rgb(59, 134, 134);
+    height: 30%;
+    margin-top: 20px;
+}
+
+#hobbies:hover {
+    box-shadow: inset 0 0 0 15px rgb(121, 189, 154);
+}
+
+#photo {
+    padding: 10px;
+}
+
+#elem,
+.perfil {
+    padding: 10px;
+    height: 150px;
+}
+
+#bio>p::first-letter {
+    font-size: 200%;
+    color: rgb(185, 235, 184);
+    font-family: 'Indie Flower', cursive;
+}
+
+.bio2 {
+    padding: 35px;
+}
+
+.spotify {
+    color: rgb(59, 134, 134);
+    display: inline-block;
+    margin-left: 20px;
+    padding: 5px;
+}
+
+.spotify:hover {
+    -webkit-transform: rotateZ(-30deg);
+    -ms-transform: rotateZ(-30deg);
+    transform: rotateZ(-30deg);
+}
+
+.icon {
+    font-size: 35px;
+}
+
+.centrado {
+    text-align: center;
+}
+
+.mensaje {
+    font-family: 'Indie Flower', cursive;
+    font-size: 60px;
+    margin: 0px;
+    padding: 0px;
+    font-weight: 800;
+}
+
+h1 {
+    padding: 0px;
+}

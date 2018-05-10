@@ -5,7 +5,24 @@ function log() {
     if (ValidInputs()) {
         alert("Faltan datos por capturar");
     } else {
-        $('body').css({ 'background-color': 'green' });
+        let data = {
+            "email": $('#elcorreo').val(),
+            "password": $('#elpassword').val()
+        }
+
+        $.post('https://cb-api-gdl.herokuapp.com/api/alumnos/login', data).done((function(response, textStatus, jqXHR) {
+            console.log("FUNCIONO!!!!!");
+
+            location.href = 'perfil.html?' + "id=" + response.userId + "&" + "access_token=" + response.id;
+        })).fail(function(jqXHR, textStatus, errorThrown) {
+            console.error(
+                "El siguiente error ocurrio " +
+                textStatus, errorThrown
+            );
+        }).always(function() {
+            console.log("Algo!!!!!");
+        });
+
     }
 }
 

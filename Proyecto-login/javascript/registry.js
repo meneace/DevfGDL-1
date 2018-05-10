@@ -92,15 +92,16 @@ $(document).ready(function() {
     $("#crear").click(function() {
 
         let data = {
-            'nombre': $('#nombre').val(),
-            'foto': $('#imagen').val(),
-            'github': $('#github').val(),
-            'mail': $('#elcorreo').val(),
-            'password': $('#elpassword').val()
+            "nombre": $('#nombre').val(),
+            "foto": $('#imagen').val(),
+            "github": $('#github').val(),
+            "email": $('#elcorreo').val(),
+            "password": $('#elpassword').val()
         }
 
         $.post('https://cb-api-gdl.herokuapp.com/api/alumnos', data).done((function(response, textStatus, jqXHR) {
             console.log("FUNCIONO!!!!!");
+            location.href = "index.html";
         })).fail(function(jqXHR, textStatus, errorThrown) {
             console.error(
                 "El siguiente error ocurrio " +
